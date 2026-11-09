@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+import Navbar from "./components/navbar";
+
 const minecraftFont = localFont({
   src: [
     {
@@ -77,7 +79,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${minecraftFont.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {" "}
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
