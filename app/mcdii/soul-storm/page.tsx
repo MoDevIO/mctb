@@ -83,7 +83,7 @@ export default function SoulStorm() {
     );
     return (
       <div className="p-10 flex flex-col justify-center items-center">
-        <h1 className="text-2xl font-bold mb-10 text-[#23E5E3]">
+        <h1 className="text-2xl font-black mb-10 text-[#23E5E3]">
           Soul Storms Live Tracker
         </h1>
 

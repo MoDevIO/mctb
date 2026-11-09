@@ -28,7 +28,7 @@ export default function SoulStormCard({
         <span className="text-2xl font-bold text-center">
           {location !== "None" ? location : "No Soul Storm active"}
         </span>
-        <span className="text-md font-light text-(--foreground-secondary) text-center">
+        <span className="text-md font-normal text-(--foreground-secondary) text-center">
           {timeRemaining === "" || timeRemaining === "00:00"
             ? ""
             : `Time Remaining: ${timeRemaining}`}
