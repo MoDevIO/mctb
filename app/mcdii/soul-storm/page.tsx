@@ -12,6 +12,9 @@ function formatTime(ms: number): string {
     .toString()
     .padStart(2, "0")}`;
 }
+function formatTimeMin(ms: number): string {
+  return `${Math.floor(ms / 60000)}min`;
+}
 
 function timeUntilDate(date: Date): number {
   const now = new Date();
@@ -98,7 +101,11 @@ export default function SoulStorm() {
             icon={getLocationIcon(storm.name)}
             timeRemaining={""}
             startsAt={formatDate(new Date(storm.startTime))}
-            startsIn={formatTime(timeUntilDate(new Date(storm.startTime)))}
+            startsIn={
+              index === 0
+                ? formatTime(timeUntilDate(new Date(storm.startTime)))
+                : formatTimeMin(timeUntilDate(new Date(storm.startTime)))
+            }
           />
         ))}
       </div>
