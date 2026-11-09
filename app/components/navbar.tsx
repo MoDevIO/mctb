@@ -27,19 +27,19 @@ export default function Navbar() {
         </Link>
         <Link
           href="/mc"
-          className={`hover:text-[#7BD456] transition-colors ${pathname === "/mc" ? "text-[#7BD456]" : ""}`}
+          className={`hover:text-[#7BD456] transition-colors ${pathname === "/mc" ? "text-[#7BD456]" : pathname.startsWith("/mc/") ? "text-[color-mix(in_srgb, #7BD456,black_20%)]" : ""}`}
         >
           Minecraft
         </Link>
         <Link
           href="/mcd"
-          className={`hover:text-[#E4730E] transition-colors ${pathname === "/mcd" ? "text-[#E4730E]" : ""}`}
+          className={`hover:text-[#E4730E] transition-colors ${pathname === "/mcd" ? "text-[#E4730E]" : pathname.startsWith("/mcd/") ? "text-[color-mix(in_srgb,#E4730E,black_20%)]" : ""}`}
         >
           Dungeons
         </Link>
         <Link
           href="/mcdii"
-          className={`hover:text-[#FFED74] transition-colors ${pathname === "/mcdii" ? "text-[#FFED74]" : ""}`}
+          className={`hover:text-[#FFED74] transition-colors ${pathname === "/mcdii" ? "text-[#FFED74]" : pathname.startsWith("/mcdii/") ? "text-[color-mix(in_srgb,#FFED74,black_20%)]" : ""}`}
         >
           Dungeons II
         </Link>
