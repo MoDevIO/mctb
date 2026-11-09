@@ -11,7 +11,7 @@ export default function Tower() {
     setDate(new Date());
   }, []);
   if (!date) {
-    return <div>Loading...</div>;
+    return null;
   }
 
   const stage = calcStage(date);
