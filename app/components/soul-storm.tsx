@@ -15,7 +15,13 @@ export default function SoulStormCard({
 }) {
   return (
     <div
-      className={`flex gap-3 min-w-120 mb-2 bg-(--background-secondary) p-3 rounded-lg border-none ${location === "None" ? "scale-75 text-gray-600 mb-[-2]" : "scale-100"} transition-transform`}
+      className={`flex gap-3 min-w-120 mb-2 bg-(--background-secondary) p-3 rounded-lg border-none ${
+        location === "None"
+          ? "scale-75 text-gray-600 mb-[-2]"
+          : timeRemaining === ""
+            ? "scale-100"
+            : "scale-105 mb-7"
+      } transition-transform`}
     >
       <Image
         src={icon}
