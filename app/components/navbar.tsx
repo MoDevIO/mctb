@@ -7,7 +7,18 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <nav className="w-full flex items-center justify-between px-8 py-4 border-b border-(--foreground-secondary) ">
+    <nav
+      className={`w-full flex items-center justify-between px-8 py-4 border-b border-(--foreground-secondary)
+        ${
+          pathname.startsWith("/mc/") || pathname === "/mc"
+            ? "border-[#7BD456]"
+            : pathname.startsWith("/mcd/") || pathname === "/mcd"
+              ? "border-[#E4730E]"
+              : pathname.startsWith("/mcdii/") || pathname === "/mcdii"
+                ? "border-[#FFED74]"
+                : ""
+        }`}
+    >
       <div className="flex items-center gap-3">
         <Image
           src="/images/logo_placeholder.png"
