@@ -14,7 +14,7 @@ export function calcStage(date: Date): number {
   return ((weeksDiff + 1) % numberOfStages) + 1;
 }
 
-export function calcTimeUntilNextStage(date: Date): number {
+export function calcTimeUntilNextLayout(date: Date): number {
   const targetDate = Date.UTC(
     date.getFullYear(),
     date.getMonth(),

@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed bg-background w-full flex items-center justify-between px-8 py-4 border-b border-(--foreground-secondary)
+        className={`fixed z-1 bg-background w-full flex items-center justify-between px-8 py-4 border-b border-(--foreground-secondary)
         ${
           pathname.startsWith("/mc/") || pathname === "/mc"
             ? "border-[#7BD456]"
