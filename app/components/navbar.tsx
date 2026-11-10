@@ -27,7 +27,7 @@ export default function Navbar() {
         </Link>
         <Link
           href="/mc"
-          className={`hover:text-[#7BD456] transition-colors ${pathname === "/mc" ? "text-[#7BD456]" : pathname.startsWith("/mc/") ? "text-[color-mix(in_srgb, #7BD456,black_20%)]" : ""}`}
+          className={`hover:text-[#7BD456] transition-colors ${pathname === "/mc" ? "text-[#7BD456]" : pathname.startsWith("/mc/") ? "text-[color-mix(in_srgb,#7BD456,black_20%)]" : ""}`}
         >
           Minecraft
         </Link>
