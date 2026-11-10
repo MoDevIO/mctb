@@ -6,13 +6,13 @@ export default function Dungeons() {
       <Card
         name="Tower"
         description="See current tower"
-        image="/images/tower.png"
+        image="/images/mcd/tower_parts/tower_top.png"
         link="/mcd/tower"
       />
       <Card
         name="Enchantments"
         description="See all enchantments"
-        image="/images/enchantment.png"
+        image="/images/mcd/enchantment.png"
         link="/mcd/enchantments"
       />
     </div>
